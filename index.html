@@ -394,31 +394,38 @@
         </button>
         <form action="/index.html" class="contact-form">
             <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-            <label for="user-name"  class="modal-form-field">Имя
-                <input class="form-input" name="name" type="text" placeholder="Your name">
-                <svg class="form-icon" width="12" heigh="12">
-                    <use href="./images/icons.svg#person"></use>
-                </svg>
-                </input>
+            <label for="user-name" class="modal-form-field">Имя
+                <span class="form-wrapper">
+                    <input class="form-input" name="name" type="text">
+                        <svg class="form-icon" width="12" heigh="12">
+                            <use href="./images/icons.svg#person"></use>
+                        </svg>
+                    </input>
+                </span>
             </label>
-            <label for="user-phone" class="modal-form-field">Телефон
-                <input class="form-input" name="tel" type="tel" placeholder="Your tel">
-                <svg class="form-icon" width="13" heigh="13">
-                    <use href="./images/icons.svg#phone"></use>
-                </svg>
+            <label class="modal-form-field" for="user-phone">Телефон
+                <span class="form-wrapper">
+                    <input class="form-input" name="tel" type="tel">
+                    <svg class="form-icon" width="13" heigh="13">
+                        <use href="./images/icons.svg#phone"></use>
+                    </svg>
+                </span>
             </label>
-            <label for="user-email" class="modal-form-field">Почта
-                <input class="form-input" name="email" type="email" placeholder="Your email">
-                <svg class="form-icon" width="15" heigh="12">
-                    <use href="./images/icons.svg#email"></use>
-                </svg>
+            <label class="modal-form-field" for="user-email">Почта
+                <span class="form-wrapper">
+                    <input class="form-input" name="email" type="email">
+                    <svg class="form-icon" width="15" heigh="12">
+                        <use href="./images/icons.svg#email"></use>
+                    </svg>
+                </span>
             </label>
-            <label for="user-comment" class="modal-form-message">Комментарий
-                <textarea name="user-message" id="" cols="30" rows="10"></textarea>
+            <label  for="user-comment">Комментарий
+                <textarea class="modal-form-message" name="user-message" id="user-comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
             </label>
-            <label for="checkbox" class="modal-form-field">
-                <p>Соглашаюсь с рассылкой и принимаю Условия договора</p>
-                <input type="checkbox">
+            <input type="checkbox" id="accept-policy">
+                <label for="accept-policy" class="modal-form-checkbox">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+                
+                
             </label>
             <button type="submit" class="contact-button">Submit</button>
         </form>
