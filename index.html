@@ -382,8 +382,19 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-subscribe">
+                <h3 class="social-title">Подпишитесь на рассылку</h3>
+                <form class="subscribe-form"></form>
+                <input class="subscribe-input" type="text" name="mail" id="mail" placeholder="E-mail"/>
+                <button class="subscribe-button" type="submit">Подписаться
+                    <svg class="subscribe-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </footer>
+    <!--Modal-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
         <button class="button-close button" data-modal-close>
@@ -419,15 +430,19 @@
                     </svg>
                 </span>
             </label>
-            <label  for="user-comment">Комментарий
+            <label  for="user-comment">Комментарий</label>
                 <textarea class="modal-form-message" name="user-message" id="user-comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
-            </label>
-            <input type="checkbox" id="accept-policy">
-                <label for="accept-policy" class="modal-form-checkbox">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
-                
-                
-            </label>
-            <button type="submit" class="contact-button">Submit</button>
+            <div class="checkbox-field">
+                <label class="checkbox-label">
+                <input  class="checkbox" type="checkbox">
+                <svg class="checkbox-icon" width="16" heigh="15">
+                    <use href="./images/icons.svg#tick"></use>
+                </svg>  
+                </label>
+            </div>
+            <span class="modal-form-checkbox">Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="#">Условия договора</a>
+            </span>
+            <button type="submit" class="contact-button">Отправить</button>
         </form>
         </div>
     </div>

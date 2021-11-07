@@ -553,27 +553,29 @@ body {
 .button-close:hover,.button-close:focus {
     fill: var(--accent-color);
 }
+/* form */
 .contact-form {
-    /* display: block; */
-    margin: 0 auto;
-    width: 500px;
-    /* min-height: ; */
+    /* margin: 0 auto; */
+    width: 530px;
     padding: 40px;
     box-shadow: 0;
+    background: var(--general-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 .form-title {
-    /* position: absolute; */
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
-    /* text-align: center; */
     color: #212121;
     margin-bottom: 12px;
 }
 .modal-form-field {
     margin-bottom: 4px;
+    align-items: center;
+    text-align: start;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.01em;
     color: #757575;
 }
@@ -590,7 +592,6 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     transition: border-color var(--transition-duration) var(--transition-timing-function);
-
 }
 .form-input:focus {
     outline: none;
@@ -614,7 +615,6 @@ body {
     resize: none;
     padding: 12px 16px;
     transition: border-color var(--transition-duration) var(--transition-timing-function);
-
 }
 .modal-form-message:focus {
     outline: none;
@@ -635,14 +635,117 @@ body {
 .form-input:focus + .form-icon {
     fill: var(--accent-color);
 }
-
+.checkbox-field {
+    margin-bottom: 30px;
+}
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+.checkbox {
+    position: absolute;
+    appearance: none;
+}
+.checkbox-icon{
+    margin-right: 9px;
+    width: 18px;
+    height: 18px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2px; 
+    transition: borded var(--transition-duration) var(--transition-timing-function), background-color var(--transition-duration) var(--transition-timing-function);
+}
+.checkbox-icon:focus {
+    fill: var(--accent-color);
+} 
+.checkbox:checked + .checkbox-icon {
+    background-color: var(--accent-color);
+    border: var(--accent-color);
+    border-radius: 2px;
+}
 .modal-form-checkbox {
-    
-    display: block;
-    content: '';
-    border: 0.2px solid #FFFFFF;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #757575;
+    margin-bottom: 30px;
     cursor: pointer;
 }
+/* .modal-form-checkbox::before {
+    display: inline-block;
+    content: '';
+    width: 18px;
+    height: 18px;
+    margin-right: 9px;
+    border: 0.2px solid #FFFFFF;
+    
+} */
+.checkbox-link {
+    font-size: 14px;
+    list-style: 1.71;
+    text-decoration: underline;
+    color: var(--accent-color);
+}
 .contact-button {
-    display: block;
+    margin: 0 auto;
+    padding: 10px 55px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--general-white);
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+    cursor: pointer;
+}
+.contact-button:hover {
+    background-color: #188CE8;
+}
+/* subscribe */
+.footer-subscribe {
+    margin-left: 93px;
+}
+.subscribe-input {
+    padding-left: 16px;
+    width: 360px;
+height: 50px;
+background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+font-size: 16px;
+list-height: 1.25;
+color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-button {
+    /* display: inline-flex; */
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-style: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--general-white);
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+    cursor: pointer;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.subscribe-icon {
+    margin-left: 10px;
 }
